@@ -9,7 +9,8 @@ RUN npm run build
 
 # run phase
 FROM nginx
-COPY --from=builder --chown=node:node /app/build/ /usr/share/nginx/html
+EXPOSE 80
+COPY --from=builder /app/build/ /usr/share/nginx/html
 
 
 
