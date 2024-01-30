@@ -21,9 +21,9 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name: andrew-udemy-frontend 
-          environment_name: Andrew-udemy-frontend-env  
-          existing_bucket_name: elasticbeanstalk-eu-north-1-146986763173 
-          region: eu-north-1   
+          application_name: andrew-frontend 
+          environment_name: Andrew-frontend-env   
+          existing_bucket_name: elasticbeanstalk-eu-west-1-146986763173 
+          region: eu-west-1   
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
